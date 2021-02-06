@@ -19,5 +19,6 @@ int main(void)
         res_str[5] = '\0';
         strncat(res_str, str, len - 5);
     }
-    
+    printf("입력할 단어 : %s, 생략한 단어 : %s\n", str, res_str);
+    return 0;
 }
