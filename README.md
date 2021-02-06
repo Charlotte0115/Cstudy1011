@@ -9,4 +9,15 @@ int main(void)
     int len;
     printf("단어 입력 : ")
     scanf("%s", str);
+    if (len <= 5)
+    {
+        strcpy(res_str, str);
+    }
+    else
+    {
+        strncpy(res_str, str, 5);
+        res_str[5] = '\0';
+        strncat(res_str, str, len - 5);
+    }
+    
 }
